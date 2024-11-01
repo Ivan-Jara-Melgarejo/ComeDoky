@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(173, 151, 224, 0.5) 0%, rgba(91, 58, 182, 0.712) 100%), url(../img/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.navar{
+    background-image: none;
+    background-color: #667eea;
+    height: 100px;
+}
+
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.hamburguer{
+    position: fixed;
+    
+    top: 30px;
+    right: 30px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20vw;
+    height: 100%;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /*transition: transform .3s ease-in-out; */
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0,.5);
+}
+
+
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion a{
+    color: white;
+    text-decoration: none;
+}
+
+.titulo{
+    font-size: 80px;
+    margin-bottom: 15px;
+}
+
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #9f8ad0;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+/*         */
+.clients{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.cont-client{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cont-client img{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.n-client{
+    display: inline-block;
+    width: 100%;
+    font-weight: 400;
+}
+
+/*    */
+.div-completo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.cont-ServiceType {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cont-ServiceType img{
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+}
+.ts{
+    background-color: #9badac;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/*  Mapa  */
+.mapa {
+    padding: 3em 0;
+    background: #888888;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.mapa-contenido {
+    width:100%; 
+    
+    border:0; 
+    margin: 0 auto;
+    text-align: center;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    color: white;
+    background-color: #333;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+
+/*SmartPhone*/
+@media screen and (max-width: 800px){
+    .menu-navegacion{
+        width: 50vw;
+    }
+
+    .titulo{
+        font-size: 40px;
+    }
+    .mapa {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 1px 5px;
+    }
+    .mapa-contenido{
+        width: 90%;
+    }
+    .cont-ServiceType{
+        width: 80%;
+    }
+    .cont-client{
+        width: 30%;
+    }
+    .marcas{
+        display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    }
+
+
+    
+}
+
+@media screen and (max-width:650px) {
+   
+
+    iframe{
+        width:400px;
+        height: 400px;
+        
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    .menu-navegacion{
+        width: 65vw;
+    }
+    
+    .titulo{
+        font-size: 30px;
+    }
+
+    .subtitulo{
+        font-size: 30px;
+    }
+
+    .hamburguer{
+        top: 20px;
+        right: 20px;
+    }
+
+    iframe{
+        width:400px;
+        height: 400px;
+        
+    }
+    
+}
+
+@media screen and (max-width:435px){
+    iframe{
+        width:350px;
+        height: 400px;
+        
+    }
+}
+
+
+
+
+
